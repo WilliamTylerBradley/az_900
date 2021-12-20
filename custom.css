@@ -1,0 +1,11 @@
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+ .reveal {
+  background-color: #00003F;
+}
+ 
+.reveal .slides {
+    text-align: center;
+    color: white;
+}

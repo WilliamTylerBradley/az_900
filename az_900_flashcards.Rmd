@@ -1,0 +1,41 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    incremental: false
+    transition: 'none'
+    background_transition: 'none'
+    slide_level: 1
+    css: custom.css
+    reveal_options:
+      controls: false
+      slideNumber: false
+      progress: false
+      # shuffle: true # uncomment to randomize cards
+    self_contained: false
+---
+
+```{r results='asis', echo=FALSE}
+library(readxl)
+terms <- read_excel(here::here("az 900 Skills.xlsx"))
+
+for(i in 1:nrow(terms)) {
+term <- terms$Term[i]
+definition <- terms$Definition[i]
+
+cat(paste("
+  <section class=\"center\">\n
+  <div class=\"r-stack\">\n
+  <div class=\"fragment fade-out\" data-fragment-index=\"1\"><b>",
+  term,
+  "</b><br> \n <br> \n <br>
+  </div>\n"))
+
+cat(paste(
+  "<div class=\"fragment fade-in\" data-fragment-index=\"1\">",
+  definition,
+  "</div>\n
+  </div>\n
+  </section>"))
+
+}
+```

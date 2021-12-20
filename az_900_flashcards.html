@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>az_900_flashcards.knit</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="az_900_flashcards_files/reveal.js-4.2.1/dist/reset.css">
+  <link rel="stylesheet" href="az_900_flashcards_files/reveal.js-4.2.1/dist/reveal.css">
+
+  <style type="text/css">
+    /* CSS from pandoc style.html() */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+                  </style>
+
+  <link rel="stylesheet" href="az_900_flashcards_files/reveal.js-4.2.1/dist/theme/simple.css" id="theme">
+
+
+  <style type="text/css">
+  /* some tweaks to reveal css */
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+  </style>
+
+    <link rel="stylesheet" href="custom.css"/>
+    <script src="az_900_flashcards_files/header-attrs-2.11/header-attrs.js"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level1">
+
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> High Availability Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+High availability (HA) aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> High Availability Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Depending on the choosen service-level agreement (SLA), your cloud-based apps can provide a continuous user experience with no apparent downtime, even when things go wrong.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Service Level Agreements (SLA) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A service-level agreement (SLA) is a commitment between a service provider and a client. Particular aspects of the service – quality, availability, responsibilities – are agreed between the service provider and the service user
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Scalability Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Scalability can handle a growing amount of work by adding resources to the system.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Scalability Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The time-efficient benefit of cloud scalability means faster time to market, more business flexibility, and adaptability, because adding new resources doesn’t take as much time as it used to.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Horizontal Scaling </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Scaling horizontally increases compute capacity by adding instances of resources, such as adding VMs to the configuration.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Vertical Scaling </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Scale vertically to increase compute capacity by adding RAM or CPUs to a virtual machine.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Elasticity Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A system can adapt to workload changes by provisioning and de-provisioning resources in an autonomic manner, such that the available resources match the current demand as closely as possible
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Elasticity Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can configure cloud-based apps to take advantage of autoscaling, so your apps always have the resources they need.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Agility Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Deploy and configure cloud-based resources quickly as your app requirements change.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Agility Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Agility for organizations may be improved, as cloud computing may increase users’ flexibility with re-provisioning, adding, or expanding technological infrastructure resources.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Disaster Recovery Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Disaster Recovery involves a set of policies, tools and procedures to enable the recovery or continuation of vital technology infrastructure and systems following a natural or human-induced disaster.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Disaster Recovery Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+By taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your apps with the confidence that comes from knowing that your data is safe in the event of disaster.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Capital Expenditure (CapEx) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Capital Expenditure (CapEx) is the up-front spending of money on physical infrastructure, and then deducting that up-front expense over time. The up-front cost from CapEx has a value that reduces over time.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Operational Expenditure (OpEx) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Operational Expenditure (OpEx) is spending money on services or products now, and being billed for them now. You can deduct this expense in the same year you spend it. There is no up-front cost, as you pay for a service or product as you use it.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Consumption-based model </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+End users only pay for the resources that they use.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Shared Responsibility Model </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The workload responsibilities vary depending on whether the workload is hosted on Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), or in an on-premises datacenter. In an on-premises datacenter, you own the whole stack. As you move to the cloud some responsibilities transfer to Microsoft.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Infrastructure-as-a-Service (IaaS) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+This cloud service model is the closest to managing physical servers; a cloud provider will keep the hardware up-to-date, but operating system maintenance and network configuration is up to you as the cloud tenant. For example, Azure virtual machines are fully operational virtual compute devices running in Microsoft datacenters. An advantage of this cloud service model is rapid deployment of new compute devices. Setting up a new virtual machine is considerably faster than procuring, installing, and configuring a physical server.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Platform-as-a-Service (PaaS) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+This cloud service model is a managed hosting environment. The cloud provider manages the virtual machines and networking resources, and the cloud tenant deploys their applications into the managed hosting environment. For example, Azure App Services provides a managed hosting environment where developers can upload their web applications, without having to worry about the physical hardware and software requirements.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Serverless computing </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Like PaaS, serverless computing enables developers to build applications faster by eliminating the need for them to manage infrastructure. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code. Serverless architectures are highly scalable and event-driven, only using resources when a specific function or trigger occurs.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Software-as-a-Service (SaaS) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+In this cloud service model, the cloud provider manages all aspects of the application environment, such as virtual machines, networking resources, data storage, and applications. The cloud tenant only needs to provide their data to the application managed by the cloud provider. For example, Microsoft Office 365 provides a fully working version of Microsoft Office that runs in the cloud. All you need to do is create your content, and Office 365 takes care of everything else.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Service Type Use Case </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+<p>IaaS: The most flexible cloud service, you configure and manage the hardware for your application.</p>
+<p>PaaS: Focus on application development, platform management is handled by the cloud provider.</p>
+SaaS: Pay-as-you-go pricing model, users pay for the software they use on a subscription model.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Cloud computing </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Cloud computing is the delivery of computing services over the internet by using a pay-as-you-go pricing model.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Public Cloud </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Services are offered over the public internet and available to anyone who wants to purchase them. Cloud resources, such as servers and storage, are owned and operated by a third-party cloud service provider, and delivered over the internet.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Private Cloud </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A private cloud consists of computing resources used exclusively by users from one business or organization. A private cloud can be physically located at your organization’s on-site (on-premises) datacenter, or it can be hosted by a third-party service provider.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Hybrid Cloud </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Three Types of Cloud Computing </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Public cloud: no capital expenditures to scale up, applications can be quickly provisioned and deprovisioned, and organizations pay only for what they use. Private cloud: hardware must be purchased for start-up and maintenance, organizations have complete control over resources and security, organizations are responsible for hardware maintenance and updates. Hybrid cloud: provides the most flexibility, organizations determine where to run their applications, organizations control security, compliance, or legal requirements.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Region Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A region is a geographical area on the planet that contains at least one but potentially multiple datacenters that are nearby and networked together with a low-latency network.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Region Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced. Azure has more global regions than any other cloud provider. These regions give you the flexibility to bring applications closer to your users no matter where they are. Global regions provide better scalability and redundancy. They also preserve data residency for your services.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Region Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+When you deploy a resource in Azure, you’ll often need to choose the region where you want your resource deployed. Azure has specialized regions that you might want to use when you build out your applications for compliance or legal purposes.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Geography </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Disjoint areas of the world determined by Microsoft (such as US, Europe, or Asia).
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Region Pair Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Each Azure region is always paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Region Pair Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+If a region in a pair was affected by a natural disaster services would automatically failover to the other region in its region pair. Because the pair of regions is directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy. Planned Azure updates are rolled out to paired regions one region at a time to minimize downtime. Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Region Pair Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Some services offer automatic geo-redundant storage by using region pairs.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Availability Zone Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Availability zones are physically separate datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking. An availability zone is set up to be an isolation boundary. Availability zones are created by using one or more datacenters. There’s a minimum of three zones within a single region.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Availability Zone Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+If one zone goes down, the other continues working. Availability zones are connected through high-speed, private fiber-optic networks.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Availability Zone Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can use availability zones to run mission-critical applications and build high-availability into your application by co-locating your compute, storage, networking, and data resources within a zone and replicating in other zones. There could be a cost to duplicating your services and transferring data between zones. Not every region has support. Availability zones are primarily for VMs, managed disks, load balancers, and SQL databases. Azure services that support availability zones fall into two categories: Zonal services, you pin the resource to a specific zone (VMs, managed disks), Zone-redundant services, the platform replicates automatically.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Resource Group Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A container that holds related resources for an Azure solution. The resource group includes resources that you want to manage as a group.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Resource Group Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Resource groups exist to help manage and organize your Azure resources. By placing resources of similar usage, type, or location in a resource group, you can provide order and organization to resources you create in Azure. If you delete a resource group, all resources contained within it are also deleted. Organizing resources by life cycle can be useful in nonproduction environments, where you might try an experiment and then dispose of it. Resource groups make it easy to remove a set of resources all at once. Resource groups are also a scope for applying role-based access control (RBAC) permissions.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Resource Group Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You decide which resources belong in a resource group based on what makes the most sense for your organization. Resource groups can’t be nested. Before any resource can be provisioned, you need a resource group for it to be placed in.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Subscriptions Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+An Azure subscription is a logical unit of Azure services that links to an Azure account, which is an identity in Azure Active Directory (Azure AD) or in a directory that Azure AD trusts.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Subscriptions Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A subscription provides you with authenticated and authorized access to Azure products and services. It also allows you to provision resources. An account can have one subscription or multiple subscriptions that have different billing models and to which you apply different access-management policies. Two types of subscription boundaries: Billing boundary, determines how an Azure account is billed for using Azure. Azure generates separate billing reports and invoices for each subscription; Access control boundary, Azure applies access-management policies at the subscription level, and you can create separate subscriptions to reflect different organizational structures.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Subscriptions Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Using Azure requires an Azure subscription. You might want to create additional subscriptions for resource or billing management purposes. You might choose to create additional subscriptions to separate: Environments, you can choose to create subscriptions to set up separate environments for development and testing, security, or to isolate data for compliance reasons. Organizational structures, you can create subscriptions to reflect different organizational structures. Billing, you might want to also create additional subscriptions for billing purposes. You might also need additional subscriptions because of subscription limits.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Management Groups Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure management groups provide a level of scope above subscriptions.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Management Groups Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+All subscriptions within a management group automatically inherit the conditions applied to the management group. Management groups give you enterprise-grade management at a large scale no matter what type of subscriptions you might have. All subscriptions within a single management group must trust the same Azure AD tenant.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Management Groups Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You organize subscriptions into containers called management groups and apply your governance conditions to the management groups.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Resource Manager Definition </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure account.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Resource Manager Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can: manage your infrastructure through declarative templates rather than scripts. A Resource Manager template is a JSON file that defines what you want to deploy to Azure; deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually; redeploy your solution throughout the development life cycle; define the dependencies between resources; apply access control to all services; apply tags to resources to logically organize all the resources in your subscription; clarify your organization’s billing.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Resource Manager Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You use management features like access control, locks, and tags to secure and organize your resources after deployment.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Resources </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A manageable item that’s available through Azure. Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are examples of resources. All resources must be in a resource group, and a resource can only be a member of a single resource group. Many resources can be moved between resource groups with some services having specific limitations or requirements to move.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Virtual Machine Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+An Azure VM gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs the VM.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Virtual Machine Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+VMs are an ideal choice when you need: total control over the operating system (OS), the ability to run custom software, to use custom hosting configurations.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure App Service Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+This platform as a service (PaaS) environment allows you to focus on the website and API logic while Azure handles the infrastructure to run and scale your web applications.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure App Service Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+App Service enables you to build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Container Instance Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Container Instances offers the fastest and simplest way to run a container in Azure without having to manage any virtual machines or adopt any additional services. It’s a platform as a service (PaaS) offering that allows you to upload your containers, which it runs for you.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Container Instance Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Containers are managed through a container orchestrator, which can start, stop, and scale out application instances as needed.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Kubernetes Service Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The task of automating, managing, and interacting with a large number of containers is known as orchestration. Azure Kubernetes Service is a complete orchestration service for containers with distributed architectures and large volumes of containers.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Kubernetes Service Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Containers are managed through a container orchestrator, which can start, stop, and scale out application instances as needed.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Virtual Desktop Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Users have the freedom to connect to Azure Virtual Desktop with any device over the internet. They use a Azure Virtual Desktop client to connect to their published Windows desktop and applications. You can make sure your session host virtual machines (VMs) run near apps and services that connect to your datacenter or the cloud.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Virtual Desktop Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Virtual Desktop is a desktop and application virtualization service that runs on the cloud. It enables your users to use a cloud-hosted version of Windows from any location. Azure Virtual Desktop works across devices like Windows, Mac, iOS, Android, and Linux. It works with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Virtual Network Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure virtual networks enable Azure resources, such as VMs, web apps, and databases, to communicate with each other, with users on the internet, and with your on-premises client computers.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Virtual Network Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure virtual networks provide the following key networking capabilities: isolation and segmentation, internet communications, communicate between Azure resources, communicate with on-premises resources, route network traffic, filter network traffic, connect virtual networks.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> VPN Gateway Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+VPNs use an encrypted tunnel within another network. They’re typically deployed to connect two or more trusted private networks to one another over an untrusted network (typically the public internet). Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> VPN Gateway Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in Azure Virtual Network instances and enable the following connectivity: connect on-premises datacenters to virtual networks through a site-to-site connection, connect individual devices to virtual networks through a point-to-site connection, connect virtual networks to other virtual networks through a network-to-network connection.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Virtual Network peering Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+These virtual networks can be in separate regions, which allows you to create a global interconnected network through Azure.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Virtual Network peering Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can link virtual networks together by using virtual network peering. Peering enables resources in each virtual network to communicate with each other.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> ExpressRoute Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Layer 3 connectivity between your on-premises network and the Microsoft Cloud through a connectivity provider; connectivity can be from an any-to-any (IPVPN) network, a point-to-point Ethernet connection, or through a virtual cross-connection via an Ethernet exchange; connectivity to Microsoft cloud services across all regions in the geopolitical region; global connectivity to Microsoft services across all regions with the ExpressRoute premium add-on; dynamic routing between your network and Microsoft via BGP; built-in redundancy in every peering location for higher reliability; connection uptime SLA; QoS support for Skype for Business.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> ExpressRoute Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Container (Blob) Storage Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Blob Storage is an object storage solution for the cloud. It can store massive amounts of data, such as text or binary data. Azure Blob Storage is unstructured, meaning that there are no restrictions on the kinds of data it can hold. Blob Storage can manage thousands of simultaneous uploads, massive amounts of video data, constantly growing log files, and can be reached from anywhere with an internet connection.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Container (Blob) Storage Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Blob Storage is ideal for: serving images or documents directly to a browser; storing files for distributed access; streaming video and audio; storing data for backup and restore, disaster recovery, and archiving, storing data for analysis by an on-premises or Azure-hosted service; storing up to 8 TB of data for virtual machines.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Disk Storage Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Disk Storage provides disks for Azure virtual machines. Applications and other services can access and use these disks as needed, similar to how they would in on-premises scenarios. Disk Storage allows data to be persistently stored and accessed from an attached virtual hard disk.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Disk Storage Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Disks come in many different sizes and performance levels, from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs), with varying performance tiers. You can use standard SSD and HDD disks for less critical workloads, premium SSD disks for mission-critical production applications, and ultra disks for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. Azure has consistently delivered enterprise-grade durability for infrastructure as a service (Iaas) disks, with an industry-leading ZERO% annualized failure rate.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> File Storage Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block and Network File System (preview) protocols. Azure file shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS. Applications running in Azure virtual machines or cloud services can mount a file storage share to access file data, just as a desktop application would mount a typical SMB share. Any number of Azure virtual machines or roles can mount and access the file storage share simultaneously.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> File Storage Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Many on-premises applications use file shares. Azure Files makes it easier to migrate those applications that share data to Azure. If you mount the Azure file share to the same drive letter that the on-premises application uses, the part of your application that accesses the file share should work with minimal changes, if any; store configuration files on a file share and access them from multiple VMs. Tools and utilities used by multiple developers in a group can be stored on a file share, ensuring that everybody can find them, and that they use the same version; write data to a file share, and process or analyze the data later.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Storage Tiers Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+To manage costs for your expanding storage needs, it’s helpful to organize your data based on attributes like frequency of access and planned retention period. Data stored in the cloud can be different based on how it’s generated, processed, and accessed over its lifetime. Some data is actively accessed and modified throughout its lifetime. Some data is accessed frequently early in its lifetime, with access dropping drastically as the data ages. Some data remains idle in the cloud and is rarely, if ever, accessed after it’s stored. To accommodate these different access needs, Azure provides several access tiers, which you can use to balance your storage costs with your access needs.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Storage Tiers Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Storage offers different access tiers for your blob storage, helping you store object data in the most cost-effective manner. The available access tiers include: Hot access tier: Optimized for storing data that is accessed frequently (for example, images for your website); Cool access tier: Optimized for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers); Archive access tier: Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Cosmos DB Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Cosmos DB is a globally distributed, multi-model database service. You can elastically and independently scale throughput and storage across any number of Azure regions worldwide.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Cosmos DB Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can take advantage of fast, single-digit-millisecond data access by using any one of several popular APIs. Azure Cosmos DB provides comprehensive service level agreements for throughput, latency, availability, and consistency guarantees.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure SQL Database Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure SQL Database is a relational database based on the latest stable version of the Microsoft SQL Server database engine. SQL Database is a high-performance, reliable, fully managed, and secure database.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure SQL Database Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can use it to build data-driven applications and websites in the programming language of your choice, without needing to manage infrastructure.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Database for MySQL Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Database for MySQL is a relational database service in the cloud, and it’s based on the MySQL Community Edition database engine, versions 5.6, 5.7, and 8.0. With it, you have a 99.99 percent availability service level agreement from Azure, powered by a global network of Microsoft-managed datacenters.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Database for MySQL Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+With every Azure Database for MySQL server, you take advantage of built-in security, fault tolerance, and data protection that you would otherwise have to buy or design, build, and manage. With Azure Database for MySQL, you can use point-in-time restore to recover a server to an earlier state, as far back as 35 days.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Database for PostgreSQL Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+There’s no additional configuration, replication, or cost required to make sure your applications are always available; simple and flexible pricing. You have predictable performance based on a selected pricing tier choice that includes software patching, automatic backups, monitoring, and security; scale up or down as needed, within seconds. You can scale compute or storage independently as needed, to make sure you adapt your service to match usage; adjustable automatic backups and point-in-time-restore for up to 35 days. Enterprise-grade security and compliance to protect sensitive data at-rest and in-motion.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Database for PostgreSQL Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Database for PostgreSQL is available in two deployment options: Single Server and Hyperscale (Citus).
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Database for PostgreSQL: Single Server </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Single Server deployment option delivers: built-in high availability with no additional cost (99.99 percent SLA); predictable performance and inclusive, pay-as-you-go pricing; vertical scale as needed, within seconds; monitoring and alerting to assess your server; enterprise-grade security and compliance; ability to protect sensitive data at-rest and in-motion; automatic backups and point-in-time-restore for up to 35 days.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Database for PostgreSQL: Hyperscale (Citus) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Hyperscale (Citus) option horizontally scales queries across multiple machines by using sharding. Its query engine parallelizes incoming SQL queries across these servers for faster responses on large datasets. It serves applications that require greater scale and performance, generally workloads that are approaching, or already exceed, 100 GB of data.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> SQL Managed Instance Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure SQL Managed Instance is a scalable cloud data service that provides the broadest SQL Server database engine compatibility with all the benefits of a fully managed platform as a service.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> SQL Managed Instance Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure SQL Managed Instance is a platform as a service (PaaS) database engine. Your company will no longer need to purchase and manage expensive hardware, and you won’t have to maintain the additional overhead of managing your on-premises infrastructure. Your company will benefit from the quick provisioning and service scaling features of Azure, together with automated patching and version upgrades. You’ll be able to rest assured that your data will always be there when you need it through built-in high availability features and a 99.99% uptime service level agreement (SLA). You’ll also be able to protect your data with automated backups.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Marketplace Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Marketplace has thousands of software applications built by Microsoft and a vast network of industry-leading technology providers. You can also use Azure Marketplace to connect with certified Microsoft partners who provide consulting services to help with cloud migration, systems integration, data management and analytics, and other cloud projects.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Marketplace Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Legal reviews and contract negotiations are simpler with the flexibility created by the Standard Contract, custom amendments, and private offers. Adhering to budget constraints is easier with the flexible pricing models including free software, bring your own license (BYOL) products, and pay-as-you-go applications. Plus, managing monthly invoices and payments is less complicated with consolidated invoices.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Internet of Things (IoT) Hub Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The IoT Hub service supports communications both from the device to the cloud and from the cloud to the device. It also supports multiple messaging patterns, such as device-to-cloud telemetry, file upload from devices, and request-reply methods to control your devices from the cloud. After an IoT hub receives messages from a device, it can route that message to other Azure services.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Internet of Things (IoT) Hub Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between millions of IoT devices and a cloud-hosted solution back end. You can connect virtually any device to your IoT hub.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> IoT Central Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+With IoT Central, you can tailor the starter templates for the specific data that’s sent from your devices, the reports you want to see, and the alerts you want to send.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> IoT Central Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices. The visual user interface (UI) makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages. You can watch the overall performance across all devices in aggregate, and you can set up alerts that send notifications when a specific device needs maintenance. Finally, you can push firmware updates to the device.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Sphere Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Sphere creates an end-to-end, highly secure IoT solution for customers that encompasses everything from the hardware and operating system on the device to the secure method of sending messages from the device to the message hub. Azure Sphere has built-in communication and security features for internet-connected devices.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Sphere Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Sphere comes in three parts; Azure Sphere micro-controller unit (MCU), responsible for processing the operating system and signals from attached sensors; A customized Linux operating system (OS) that handles communication with the security service and can run the vendor’s software; Azure Sphere Security Service, also known as AS3, makes sure that the device has not been maliciously compromised. When the device attempts to connect to Azure, it first authenticates itself, per device, by using certificate-based authentication. If it authenticates successfully, AS3 checks to ensure that the device hasn’t been tampered. AS3 pushes any updates.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Synapse Analytics Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Synapse is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems. Azure Synapse brings together the best of SQL technologies used in enterprise data warehousing, Spark technologies used for big data, Pipelines for data integration and ETL/ELT, and deep integration with other Azure services such as Power BI, CosmosDB, and AzureML.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Synapse Analytics Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Synapse is a limitless analytics service that brings together enterprise data warehousing and Big Data analytics. It gives you the freedom to query data on your terms, using either serverless or dedicated resources—at scale.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> HDInsight Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure HDInsight is a managed, full-spectrum, open-source analytics service in the cloud for enterprises. You can use open-source frameworks such as Hadoop, Apache Spark, Apache Hive, LLAP, Apache Kafka, Apache Storm, R, and more.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> HDInsight Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure HDInsight is a cloud distribution of Hadoop components. Azure HDInsight makes it easy, fast, and cost-effective to process massive amounts of data. You can use the most popular open-source frameworks such as Hadoop, Spark, Hive, LLAP, Kafka, Storm, R, and more. With these frameworks, you can enable a broad range of scenarios such as extract, transform, and load (ETL), data warehousing, machine learning, and IoT.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Databricks Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Databricks is a data analytics platform optimized for the Microsoft Azure cloud services platform.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Databricks Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Databricks offers three environments for developing data intensive applications: Databricks SQL, Databricks Data Science &amp; Engineering, and Databricks Machine Learning.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Machine Learning Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Choose Azure Machine Learning when your data scientists need complete control over the design and training of an algorithm using your own data.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Machine Learning Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+With Azure Machine Learning, you can: create a process that defines how to obtain data, how to handle missing or bad data, how to split the data into either a training set or test set, and deliver the data to the training process; train and evaluate predictive models by using tools and programming languages familiar to data scientists; create pipelines that define where and when to run the compute-intensive experiments that are required to score the algorithms based on the training and test data; deploy the best-performing algorithm as an API to an endpoint so it can be consumed in real time by other applications.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Cognitive Services Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Language services: Allow your apps to process natural language with prebuilt scripts, evaluate sentiment, and learn how to recognize what users want; Speech services: Convert speech into text and text into natural-sounding speech; Translate from one language to another and enable speaker verification; Vision services: Add recognition and identification capabilities when you’re analyzing pictures, videos, and other visual content; Decision services: Add personalized recommendations for each user that automatically improve each time they’re used, moderate content to monitor and remove offensive or risky content, and detect abnormalities in time series.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Cognitive Services Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Use Azure Cognitive Services to solve general problems, such as analyzing text for emotional sentiment or analyzing images to recognize objects or faces. You don’t need special machine learning or data science knowledge to use these services. Developers access Azure Cognitive Services via APIs and can easily include these features in just a few lines of code.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Bot Service Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Bot Service and Bot Framework are platforms for creating virtual agents that understand and reply to questions just like a human. Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case. Namely, it creates a virtual agent that can intelligently communicate with humans. Behind the scenes, the bot you build uses other Azure services, such as Azure Cognitive Services, to understand what their human counterparts are asking for.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Bot Service Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Bots can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that might no longer require direct human intervention. Users converse with a bot by using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Serverless Computing Solutions Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Serverless computing is a cloud-hosted execution environment that runs your code but abstracts the underlying hosting environment. The term serverless computing is a misnomer. After all, there is a server (or a group of servers) that executes your code or desired functionality. The key idea is that you’re not responsible for setting up or maintaining the server. You don’t have to worry about scaling it when there’s increased demand, and you don’t have to worry about outages. The cloud vendor takes care of all maintenance and scaling concerns for you.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Serverless Computing Solutions Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You create an instance of the service, and you then add your code. No infrastructure configuration or maintenance is required, or even allowed. You configure your serverless apps to respond to events. An event could be a REST endpoint, a periodic timer, or even a message received from another Azure service. The serverless app runs only when it’s triggered by an event. Scaling and performance are handled automatically, and you’re billed only for the resources you use. You don’t even need to reserve resources.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Functions Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Because of its atomic nature, Azure Functions can serve many purposes in an application’s design. Functions can be written in many common programming languages, such as C#, Python, JavaScript, Typescript, Java, and PowerShell. Azure Functions scales automatically, and charges accrue only when a function is triggered. These qualities make Azure Functions a solid choice when demand is variable.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Functions Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can host a single method or function by using a popular programming language in the cloud that runs in response to an event. An example of an event might be an HTTP request, a new message on a queue, or a message on a timer. The Azure Functions solution is ideal when you’re concerned only with the code that’s running your service and not the underlying platform or infrastructure. You use Azure Functions most commonly when you need to perform work in response to an event. You do this often via a REST request, timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Logic Apps Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Logic Apps is a low-code/no-code development platform hosted as a cloud service. The service helps you automate and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations. Logic Apps simplifies how you design and build scalable solutions, whether in the cloud, on-premises, or both. This solution covers app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) integration.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Logic Apps Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Logic Apps is designed in a web-based designer and can execute logic that’s triggered by Azure services without writing any code. You build an app by linking triggers to actions with connectors. A trigger is an event that causes an app to execute, then a new message to be sent to a queue, or an HTTP request. An action is a task or step that can execute. There are logic actions that work with variables, decision statements and loops, and tasks that parse and modify data. You can choose from over 200 connectors, including services such as Salesforce, SAP, Oracle DB, and file shares. If you can’t find the action or connector you need, you can build your own by using custom code.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure DevOps Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure DevOps Services is a suite of services that address every stage of the software development lifecycle.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure DevOps Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Repos is a centralized source-code repository where software development, DevOps engineering, and documentation professionals can publish their code for review and collaboration. Azure Boards is an agile project management suite that includes Kanban boards, reporting, and tracking ideas and work from high-level epics to work items and issues. Azure Pipelines is a CI/CD pipeline automation tool. Azure Artifacts is a repository for hosting artifacts, such as compiled source code, which can be fed into testing or deployment pipeline steps. Azure Test Plans is an automated test tool that can be used in a CI/CD pipeline to ensure quality before a software release.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> GitHub Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+GitHub is arguably the world’s most popular code repository for open-source software. Git is a decentralized source-code management tool, and GitHub is a hosted version of Git that serves as the primary remote. GitHub builds on top of Git to provide related services for coordinating work, reporting and discussing issues, providing documentation, and more.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> GitHub Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+It offers the following functionality: It’s a shared source-code repository, including tools that enable developers to perform code reviews by adding comments and questions in a web view of the source code before it can be merged into the main code base. It facilitates project management, including Kanban boards. It supports issue reporting, discussion, and tracking. It features CI/CD pipeline automation tooling. It includes a wiki for collaborative documentation. It can be run from the cloud or on-premises
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> GitHub Actions Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+GitHub Actions enables workflow automation with triggers for many lifecycle events. One such example would be automating a CI/CD toolchain.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> GitHub Actions Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Typical tool functions range from performing automated dependency updates to building and configuring the software, delivering the build artifacts to various locations, testing, and so on.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure DevTest Labs Benefits </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure DevTest Labs provides an automated means of managing the process of building, setting up, and tearing down virtual machines (VMs) that contain builds of your software projects. This way, developers and testers can perform tests across a variety of environments and builds. And this capability isn’t limited to VMs. Anything you can deploy in Azure via an ARM template can be provisioned through DevTest Labs. Provisioning pre-created lab environments with their required configurations and tools already installed is a huge time saver for quality assurance professionals and developers.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure DevTest Labs Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Suppose you need to test a new feature on an old version of an operating system. Azure DevTest Labs can set up everything automatically upon request. After the testing is complete, DevTest Labs can shut down and deprovision the VM, which saves money when it’s not in use. To control costs, the management team can restrict how many labs can be created, how long they run, and so on.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Portal Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Azure portal provides a friendly, graphical UI to view all the services you’re using, create new services, configure your services, and view reports.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Portal Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+By using the Azure portal, a web-based user interface, you can access virtually every feature of Azure.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure PowerShell Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure PowerShell is a shell with which developers and DevOps and IT professionals can execute commands called cmdlets (pronounced command-lets). These commands call the Azure Rest API to perform every possible management task in Azure.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure PowerShell Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Cmdlets can be executed independently or combined into a script file and executed together to orchestrate: the routine setup, teardown, and maintenance of a single resource or multiple connected resources; the deployment of an entire infrastructure, which might contain dozens or hundreds of resources, from imperative code.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure CLI Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The commands call the Azure Rest API to perform every possible management task in Azure. You can run the commands independently or combined into a script and executed together for the routine setup, teardown, and maintenance of a single resource or an entire environment.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure CLI Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Azure CLI command-line interface is an executable program with which a developer, DevOps professional, or IT professional can execute commands in Bash.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Cloud Shell Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Cloud Shell Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+It provides the flexibility of choosing the shell experience that best suits the way you work, either Bash or PowerShell.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Mobile App Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Azure mobile app provides iOS and Android access to your Azure resources when you’re away from your computer.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Mobile App Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Monitor the health and status of your Azure resources. Check for alerts, quickly diagnose and fix issues, and restart a web app or virtual machine (VM). Run the Azure CLI or Azure PowerShell commands to manage your Azure resources.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Advisor Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Advisor evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs. Advisor is designed to help you save time on cloud optimization. The recommendation service includes suggested actions you can take right away, postpone, or dismiss.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Advisor Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Advisor dashboard displays personalized recommendations for all your subscriptions, and you can use filters to select recommendations for specific subscriptions, resource groups, or services. The recommendations are divided into five categories; Reliability: Used to ensure and improve the continuity of your business-critical applications; Security: Used to detect threats and vulnerabilities that might lead to security breaches; Performance: Used to improve the speed of your applications; Cost: Used to optimize and reduce your overall Azure spending. Operational Excellence: Used to help you achieve process and workflow efficiency and resource manageability.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Resource Manager (ARM) templates Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The benefit is that the entire ARM template is verified before any code is executed to ensure that the resources will be created and connected correctly. The template then orchestrates the creation of those resources in parallel.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Resource Manager (ARM) templates Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+By using Azure Resource Manager templates (ARM templates), you can describe the resources you want to use in a declarative JSON format.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Monitor Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Monitor is a platform for collecting, analyzing, visualizing, and potentially taking action based on the metric and logging data from your entire Azure and on-premises environment.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Monitor Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can use the data to help you react to critical events in real time, through alerts delivered to teams via SMS, email, and so on. Or you can use thresholds to trigger autoscaling functionality to scale up or down to meet the demand.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Service Health Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Service Health helps you keep an eye on several event types: service issues are problems in Azure, such as outages. You can drill down to the affected services, regions, updates from your engineering teams, and find ways to share and track the latest information; planned maintenance events can affect your availability. In the rare case that a reboot is required, Service Health allows you to choose when to perform the maintenance to minimize the downtime; health advisories are issues that require you to act to avoid service interruption, including service retirements and breaking changes. Health advisories are announced far in advance to allow you to plan.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Service Health Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Service Health provides a personalized view of the health of the Azure services, regions, and resources you rely on. The status.azure.com website, which displays only major issues that broadly affect Azure customers, doesn’t provide the full picture. But Azure Service Health displays both major and smaller, localized issues that affect you. Service issues are rare, but it’s important to be prepared for the unexpected. You can set up alerts that help you triage outages and planned maintenance. After an outage, Service Health provides official incident reports, called root cause analyses (RCAs), which you can share with stakeholders.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Security Center </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Security Center is a monitoring service that provides visibility of your security posture across all of your services, both on Azure and on-premises. The term security posture refers to cybersecurity policies and controls, as well as how well you can predict, prevent, and respond to security threats.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Policy Compliance </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Security Center can get a detailed analysis of different components in its environment. Because a company’s resources are analyzed against the security controls of any governance policies it has assigned, it can view its overall regulatory compliance from a security perspective all from one place.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Security Alerts </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Security Center can be used to get a centralized view of all of its security alerts. From there, a company can dismiss false alerts, investigate them further, remediate alerts manually, or use an automated response with a workflow automation.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Secure Score </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Secure score is a measurement of an organization’s security posture. Secure score is based on security controls, or groups of related security recommendations. Your score is based on the percentage of security controls that you satisfy. The more security controls you satisfy, the higher the score you receive. Your score improves when you remediate all of the recommendations for a single resource within a control.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Resource Hygiene </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+See the health of its resources from a security perspective. To help prioritize remediation actions, recommendations are categorized as low, medium, and high.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Key Vault Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Key Vault is a centralized cloud service for storing an application’s secrets in a single, central location. It provides secure access to sensitive information by providing access control and logging capabilities.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Key Vault Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can use Key Vault to securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets. You can use Key Vault as a key management solution. Key Vault makes it easier to create and control the encryption keys that are used to encrypt your data. Key Vault enables you to provision, manage, and deploy your public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for both your Azure resources and your internal resources. Store secrets backed by hardware security modules (HSMs). These secrets and keys can be protected either by software or by FIPS 140-2 Level 2 validated HSMs.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Sentinel Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Sentinel is Microsoft’s cloud-based security information and event management (SIEM) system. It uses intelligent security analytics and threat analysis.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Sentinel Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Sentinel enables you to: Collect cloud data at scale Collect data across all users, devices, applications, and infrastructure, both on-premises and from multiple clouds. Detect previously undetected threats Minimize false positives by using Microsoft’s comprehensive analytics and threat intelligence. Investigate threats with artificial intelligence Examine suspicious activities at scale, tapping into years of cybersecurity experience from Microsoft. Respond to incidents rapidly Use built-in orchestration and automation of common tasks.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Dedicated Hosts Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Dedicated Hosts Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Dedicated Host: Gives you visibility into, and control over, the server infrastructure that’s running your Azure VMs. Helps address compliance requirements by deploying your workloads on an isolated server. Lets you choose the number of processors, server capabilities, VM series, and VM sizes within the same host.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Defense in Depth </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A defense-in-depth strategy uses a series of mechanisms to slow the advance of an attack that aims at acquiring unauthorized access to data.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Network Security Groups (NSG) Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A network security group enables you to filter network traffic to and from Azure resources within an Azure virtual network. You can think of NSGs like an internal firewall. An NSG can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Network Security Groups (NSG) Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A network security group can contain as many rules as you need, within Azure subscription limits.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Firewall Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Firewall is a managed, cloud-based network security service that helps protect resources in your Azure virtual networks. A virtual network is similar to a traditional network that you’d operate in your own datacenter. It’s a fundamental building block for your private network that enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Firewall Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Firewall provides a central location to create, enforce, and log application and network connectivity policies across subscriptions and virtual networks. Azure Firewall uses a static (unchanging) public IP address for your virtual network resources, which enables outside firewalls to identify traffic coming from your virtual network. The service is integrated with Azure Monitor to enable logging and analytics.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure DDoS protection Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure DDoS Protection (Standard) helps protect your Azure resources from DDoS attacks.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure DDoS protection Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+When you combine DDoS Protection with recommended application design practices, you help provide a defense against DDoS attacks. DDoS Protection uses the scale and elasticity of Microsoft’s global network to bring DDoS mitigation capacity to every Azure region. The DDoS Protection service helps protect your Azure applications by analyzing and discarding DDoS traffic at the Azure network edge, before it can affect your service’s availability.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Authentication </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Authentication is the process of establishing the identity of a person or service that wants to access a resource. It involves the act of challenging a party for legitimate credentials and provides the basis for creating a security principal for identity and access control. It establishes whether the user is who they say they are.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Authorization </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Authorization is the process of establishing what level of access an authenticated person or service has. It specifies what data they’re allowed to access and what they can do with it.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Active Directory </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Active Directory (Azure AD) provides identity services that enable your users to sign in and access both Microsoft cloud applications and cloud applications that you develop.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Active Directory Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Authentication: Verifying identity to access applications and resources. It includes providing functionality such as self-service password reset, multifactor authentication, a custom list of banned passwords, and smart lockout services; Single sign-on: SSO enables you to remember only one username and one password to access multiple applications. Application management: You can manage your cloud and on-premises apps by using Azure AD. Device management: Azure AD supports the registration of devices. It allows for device-based Conditional Access policies to restrict access to only those coming from known devices.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Active Directory Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+IT administrators: Administrators can use Azure AD to control access to applications and resources based on their business requirements; App developers: Developers can use Azure AD to provide a standards-based approach for adding functionality to applications that they build; Users: Users can manage their identities; Online service subscribers: Microsoft 365, Microsoft Office 365, Azure, and Microsoft Dynamics CRM Online subscribers are already using Azure AD.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Conditional Access Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Conditional Access is a tool that Azure Active Directory uses to allow (or deny) access to resources based on identity signals. These signals include who the user is, where the user is, and what device the user is requesting access from.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Conditional Access Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Conditional Access helps IT administrators: Empower users to be productive wherever and whenever, Protect the organization’s assets.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Multi-Factor Authentication (MFA) Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Multifactor authentication provides additional security for your identities by requiring two or more elements to fully authenticate.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Multi-Factor Authentication (MFA) Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Multifactor authentication is a process where a user is prompted during the sign-in process for an additional form of identification. Examples include a code on their mobile phone or a fingerprint scan.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Single Sign-On (SSO) Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Single sign-on enables a user to sign in one time and use that credential to access multiple resources and applications from different providers.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Single Sign-On (SSO) Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+With SSO, you need to remember only one ID and one password. Access across applications is granted to a single identity that’s tied to the user, which simplifies the security model. As users change roles or leave an organization, access is tied to a single identity. This change greatly reduces the effort needed to change or disable accounts. Using SSO for accounts makes it easier for users to manage their identities and increases your security capabilities.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Role-Based Access Control (RBAC) Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Role-based access control is applied to a scope, which is a resource or set of resources that this access applies to.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Role-Based Access Control (RBAC) Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure provides built-in roles that describe common access rules for cloud resources. You can also define your own roles. Each role has an associated set of access permissions that relate to that role. When you assign individuals or groups to one or more roles, they receive all of the associated access permissions.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Resource Locks Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A resource lock prevents resources from being accidentally deleted or changed.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Resource Locks Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, or from an Azure Resource Manager template.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Tags Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Resource tags are another way to organize resources. Tags provide extra information, or metadata, about your resources.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Tags Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Tags enable you to locate and act on resources that are associated with specific workloads, environments, business units, and owners. Tags enable you to group resources so that you can report on costs. Tags enable you to group resources according to how critical their availability is to your business. This grouping helps you formulate service-level agreements (SLAs). Tags enable you to classify data by its security level, such as public or confidential. Tags enable you to identify resources that align with governance or regulatory compliance requirements, such as ISO 27001. Tags can also be part of your standards enforcement efforts. Tags can help you visualize complex deployments.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Policy Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules and effects over your resource configurations so that those configurations stay compliant with corporate standards.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Policy Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Policy enables you to define both individual policies and groups of related policies, known as initiatives. Azure Policy evaluates your resources and highlights resources that aren’t compliant with the policies you’ve created. Azure Policy can also prevent noncompliant resources from being created. Azure Policy comes with a number of built-in policy and initiative definitions that you can use, under categories such as Storage, Networking, Compute, Security Center, and Monitoring.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Blueprints Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Blueprints orchestrates the deployment of various resource templates and other artifacts, such as role assignments, policy assignments, Azure Resource Manager templates, and resource groups.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Blueprints Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+With Azure Blueprints you can define a repeatable set of governance tools and standard Azure resources that your organization requires. In this way, development teams can rapidly build and deploy new environments with the knowledge that they’re building within organizational compliance with a set of built-in components that speed the development and deployment phases.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Cloud Adoption Framework for Azure </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages: Define your strategy. Make a plan. Ready your organization. Adopt the cloud. Govern and manage your cloud environments.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Security </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure is built on leading security technologies to help organizations manage and control user identity and access, which are central elements in securing your environment. Azure delivers network and infrastructure security technologies and tools to help protect your applications and data. Azure uses encryption to protect communications and operational processes including your data in transit. Azure also offers encryption for your data at rest. Azure offers advanced tools to detect and defend against threats.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Privacy </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Azure approach to privacy and data protection is grounded in a commitment to give organizations ownership of and control over the collection, use, and distribution of customer data. You own all your data in Azure, and Microsoft will use it only to provide the services agreed upon. Microsoft will not mine your data for marketing or advertising purposes. You have control over where your data is located, who can access it, and on what terms. You can access your own customer data at any time and for any reason. Microsoft imposes carefully defined requirements for government and law enforcement requests for customer data.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Compliance </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Compliance plays a critical role in providing assurance for customers and is an important element in the trust relationship. Through rigorous and widely recognized formal standards that are certified by independent third parties, Microsoft helps organizations comply with constantly shifting requirements and regulations governing the collection and use of individuals’ data.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Microsoft Privacy Statement </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Microsoft Privacy Statement explains what personal data Microsoft collects, how Microsoft uses it, and for what purposes. The privacy statement covers all of Microsoft’s services, websites, apps, software, servers, and devices. This list ranges from enterprise and server products to devices that you use in your home to software that students use at school. Microsoft’s privacy statement also provides information that’s relevant to specific products such as Windows and Xbox.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Product Terms site </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Online Services Terms (OST) is a legal agreement between Microsoft and the customer. The OST details the obligations by both parties with respect to the processing and security of customer data and personal data. The OST applies specifically to Microsoft’s online services that you license through a subscription, including Azure, Dynamics 365, Office 365, and Bing Maps.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Data Protection Addendum (DPA) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Data Protection Addendum (DPA) further defines the data processing and security terms for online services. These terms include: Compliance with laws; Disclosure of processed data; Data Security, which includes security practices and policies, data encryption, data access, customer responsibilities, and compliance with auditing; Data transfer, retention, and deletion.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Trust Center </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Trust Center showcases Microsoft’s principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Compliance Documentation </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Azure compliance documentation provides you with detailed documentation about legal and regulatory standards and compliance on Azure. Here you find compliance offerings across these categories: Global, US government, Financial services, Health, Media and manufacturing, Regional. There are also additional compliance resources, such as audit reports, privacy information, compliance implementations and mappings, and white papers and analyst reports. Country and region privacy and compliance guidelines are also included. Some resources might require you to be signed in to your cloud service to access them.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Sovereign Regions (Azure Government cloud services and Azure China cloud services) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Government is a separate instance of the Microsoft Azure service. It addresses the security and compliance needs of US federal agencies, state and local governments, and their solution providers. Azure Government offers physical isolation from non-US government deployments and provides screened US personnel.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Resource Types Affect Costs </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+<p>A number of factors influence the cost of Azure resources. They depend on the type of resource or how you customize it.</p>
+For example, with a storage account you specify a type (such as block blob storage or table storage), a performance tier (standard or premium), and an access tier (hot, cool, or archive). These selections present different costs.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Services Affect Costs </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+When you provision a resource, Azure creates meters to track usage of that resource. Azure uses these meters to generate a usage record that’s later used to help calculate your bill. Each meter tracks a specific type of usage. For example, a meter might track bandwidth usage (ingress or egress network traffic in bits per second), number of operations, or its size (storage capacity in bytes). The usage that a meter tracks correlates to a quantity of billable units. Those units are charged to your account for each billing period. The rate per billable unit depends on the resource type you’re using.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Locations Affect Costs </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure infrastructure is distributed globally, which enables you to deploy your services centrally or provision your services closest to where your customers use them. Different regions can have different associated prices. Because geographic regions can impact where your network traffic flows, network traffic is a cost influence to consider as well.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Ingress Traffic Affects Cost </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Bandwidth refers to data moving in and out of Azure datacenters. Some inbound data transfers (data going into Azure datacenters) are free.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Egress Traffic Affects Cost </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Bandwidth refers to data moving in and out of Azure datacenters. For outbound data transfers (data leaving Azure datacenters), data transfer pricing is based on zones.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Reserved Instances Reduces Cost </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Reservations offers discounted prices on certain Azure services. Azure Reservations can save you up to 72 percent as compared to pay-as-you-go prices. To receive a discount, you reserve services and resources by paying in advance. Azure Reservations are available to customers with an Enterprise Agreement, Cloud Solution Providers, and pay-as-you-go subscriptions.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Reserved Capacity Reduces Cost </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Reservations offers discounted prices on certain Azure services. Azure Reservations can save you up to 72 percent as compared to pay-as-you-go prices. To receive a discount, you reserve services and resources by paying in advance. Azure Reservations are available to customers with an Enterprise Agreement, Cloud Solution Providers, and pay-as-you-go subscriptions.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Hybrid Use Benefit Reduces Cost </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+If you’ve purchased licenses for Windows Server or SQL Server, and your licenses are covered by Software Assurance, you might be able to repurpose those licenses on VMs on Azure.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> How Spot Pricing Reduces Cost </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Use Spot Virtual Machines and take advantage of unused compute capacity at significant cost savings. Deploy interruptible workloads that don’t need to be completed within a specific period. Run workloads for development, testing, quality assurance, advanced analytics, big data, machine learning and AI, batch jobs, rendering and transcoding of videos, graphics, and images at a very low cost.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Pricing Calculator Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+You also can access pricing details, product details, and documentation for each product from within the Pricing calculator.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Pricing Calculator Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The Pricing calculator displays Azure products in categories. You add these categories to your estimate and configure according to your specific requirements. You then receive a consolidated estimated price, with a detailed breakdown of the costs associated with each resource you added to your solution. You can export or share that estimate or save it for later. You can load a saved estimate and modify it to match updated requirements.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Total Cost of Ownership (TCO) Calculator Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The TCO Calculator helps you estimate the cost savings of operating your solution on Azure over time, instead of in your on-premises datacenter.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Total Cost of Ownership (TCO) Calculator Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+With the TCO Calculator, you enter the details of your on-premises workloads. Then you review the suggested industry average cost (which you can adjust) for related operational costs. These costs include electricity, network maintenance, and IT labor. You’re then presented with a side-by-side report. Using the report, you can compare those costs with the same workloads running on Azure.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Cost Management Functionality </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Cost Management + Billing is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Cost Management Usage </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+Azure Cost Management + Billing features include: Reporting: Use historical data to generate reports and forecast future usage and expenditure; Data enrichment: Improve accountability by categorizing resources with tags that correspond to real-world business and organizational units; Budgets: Create and manage cost and usage budgets by monitoring resource demand trends, consumption rates, and cost patterns; Alerting: Get alerts based on your cost and usage budgets; Recommendations: Receive recommendations to eliminate idle resources and to optimize the Azure resources you provision.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Azure Service Level Agreement (SLA) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+A service-level agreement (SLA) is a formal agreement between a service company and the customer. For Azure, this agreement defines the performance standards that Microsoft commits to for you, the customer. Understanding the SLA for each Azure service you use helps you understand what guarantees you can expect. When you build applications on Azure, the availability of the services that you use affect your application’s performance. Understanding the SLAs involved can help you establish the SLA you set with your customers.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Actions That Can Impact an SLA </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+To achieve maximum availability in your application, add redundancy to every single part of the application. This redundancy includes the application itself, as well as the underlying services and infrastructure. Be aware, however, that doing so can be difficult and expensive, and often results in solutions that are more complex than they need to be.
+</div>
+</div>
+</section>
+<section class="center">
+<div class="r-stack">
+<div class="fragment fade-out" data-fragment-index="1">
+<b> Service Lifecycle in Azure (Public Preview and General Availability) </b><br> <br> <br>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+The service lifecycle defines how every Azure service is released for public use. Every Azure service starts in the development phase. The Azure team collects and defines its requirements, and begins to build the service. Next, the service is released to the public preview phase. During this phase, the public can access and experiment with it so that it can provide feedback. Providing feedback gives you the opportunity to request new or different capabilities so that services better meet your needs. After a new Azure service is validated and tested, it’s released to all customers as a production-ready service known as general availability (GA).
+</div>
+</div>
+</section>
+</section>
+    </div>
+  </div>
+
+  <script src="az_900_flashcards_files/reveal.js-4.2.1/dist/reveal.js"></script>
+  
+  <!-- reveal.js plugins -->
+  
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Display the page number of the current slide
+        slideNumber: false,
+        // Push each slide change to the browser history
+        // Implies `hash: true`
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        plugins: [
+        ]
+      });
+
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
